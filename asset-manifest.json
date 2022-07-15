@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cryptomida/static/css/main.25258622.css",
+    "main.js": "/cryptomida/static/js/main.41bd0b73.js",
+    "index.html": "/cryptomida/index.html",
+    "main.25258622.css.map": "/cryptomida/static/css/main.25258622.css.map",
+    "main.41bd0b73.js.map": "/cryptomida/static/js/main.41bd0b73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25258622.css",
+    "static/js/main.41bd0b73.js"
+  ]
+}
