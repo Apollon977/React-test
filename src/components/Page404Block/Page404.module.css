@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  text-align: center;
+}
+
+.container__title{
+  margin-top: 25px;
+  font-size: 120px;
+  color: gold;
+}
+
+.container__description{
+  margin-top: 150px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.container__title_button{
+  display: block;
+}
+
+.btn{
+  display: block;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.btn:hover{
+  background-color: gold;
+ 
+}
