@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import CoinPage from './Pages/CoinPage';
 
 import './App.css';
+import Page404 from './Pages/Page404';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
          <Route path="/Home" element={<Home  />}/>
           <Route path="/" element={<Home  />}/>
           <Route path="/coins/:id" element={<CoinPage />}/>
+          <Route path="*" element={<Page404 />}/>
       </Routes>
     </div>
   );
