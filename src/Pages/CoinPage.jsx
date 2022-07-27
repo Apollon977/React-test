@@ -11,7 +11,6 @@ import CoinInfo from '../components/CoinInfo';
 import { numberWithCommas } from '../components/Banner/Carousel';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { async } from '@firebase/util';
 
 const CoinPage = () => {
   const { id } = useParams();

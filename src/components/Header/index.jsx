@@ -11,13 +11,12 @@ import {
   createTheme,
   ThemeProvider,
 } from '@material-ui/core';
-
 import { CryptoState } from '../../CryptoContext';
 
 import AuthModal from '../Auth/AuthModal';
 import UserSidebar from '../Auth/UserSidebar';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
     color: 'gold',
@@ -27,6 +26,21 @@ const useStyles = makeStyles(() => ({
   },
   navbar: {
     justifyContent: 'space-between',
+  },
+  selectCurrency: {
+    width: 100,
+    height: 40,
+    marginRight: 15,
+    marginLeft: '70%',
+    [theme.breakpoints.down('md')]: {
+      marginLeft: '60%',
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: '40%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: '10%',
+    },
   },
 }));
 
@@ -53,13 +67,8 @@ const Header = () => {
               </Typography>
             </Link>
             <Select
+              className={classes.selectCurrency}
               variant="outlined"
-              style={{
-                width: 100,
-                height: 40,
-                marginRight: 15,
-                marginLeft: 789,
-              }}
               value={currency}
               onChange={(e) => setCurrency(e.target.value)}>
               <MenuItem value={'USD'}>USD</MenuItem>

@@ -1,0 +1,42 @@
+.selectCurrency{
+  width: 100;
+  height: 40;
+  margin-right: 15;
+  margin-left: '70%'; 
+  }
+
+  @media screen and (max-width: 900px){
+    .selectCurrency{
+      margin-left: '60%'; 
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .selectCurrency{
+      margin-left: '50%'; 
+    }
+  }
+
+  @media screen and (max-width: 580px){
+    .selectCurrency{
+      margin-left: '40%'; 
+    }
+  }
+  
+  @media screen and (max-width: 480px){
+    .selectCurrency{
+      margin-left: '30%'; 
+    }
+  }
+
+  @media screen and (max-width: 420px){
+    .selectCurrency{
+      margin-left: '20%'; 
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .selectCurrency{
+      margin-left: '10%'; 
+    }
+  }
