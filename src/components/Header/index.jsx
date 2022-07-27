@@ -14,6 +14,9 @@ import {
 
 import { CryptoState } from '../../CryptoContext';
 
+import AuthModal from '../Auth/AuthModal';
+import UserSidebar from '../Auth/UserSidebar';
+
 const useStyles = makeStyles(() => ({
   title: {
     flex: 1,
@@ -29,8 +32,7 @@ const useStyles = makeStyles(() => ({
 
 const Header = () => {
   const classes = useStyles();
-  const { currency, setCurrency } = CryptoState();
-  console.log(currency);
+  const { currency, setCurrency, user } = CryptoState();
   const darkTheme = createTheme({
     palette: {
       primary: {
@@ -56,12 +58,14 @@ const Header = () => {
                 width: 100,
                 height: 40,
                 marginRight: 15,
+                marginLeft: 789,
               }}
               value={currency}
               onChange={(e) => setCurrency(e.target.value)}>
               <MenuItem value={'USD'}>USD</MenuItem>
               <MenuItem value={'RUB'}>RUB</MenuItem>
             </Select>
+            {user ? <UserSidebar /> : <AuthModal />}
           </Toolbar>
         </Container>
       </AppBar>
